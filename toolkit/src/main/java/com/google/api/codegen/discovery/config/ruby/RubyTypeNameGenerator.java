@@ -108,7 +108,7 @@ public class RubyTypeNameGenerator extends TypeNameGenerator {
 
   @Override
   public String getApiTypeName(String apiName) {
-    return Name.upperCamel(apiName.replace(" ", ""), "Service").toUpperCamel();
+    return Name.upperCamelKeepUpperAcronyms(apiName.replace(" ", ""), "Service").toUpperCamel();
   }
 
   @Override
